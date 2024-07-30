@@ -1,0 +1,12 @@
+.abs{
+    position: absolute;
+    padding: .5em 1em;
+    margin: .5em .5em;
+    left:0;
+    top:0;  
+    z-index: 1;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}

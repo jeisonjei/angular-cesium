@@ -1,0 +1,19 @@
+<div class="grid">
+  <div class="abs">
+    <form action="">
+      <mat-form-field>
+        <mat-autocomplete #auto>
+          @for (city of filteredCities | async; track $index) {
+            <mat-option [value]="city.name">{{city.name}}</mat-option>
+          }
+        </mat-autocomplete>
+        <input matInput type="text" [matAutocomplete]="auto" placeholder="Москва ..." [formControl]="autocompleteControl" (keydown)="handleKeydown($event)">
+        <mat-label>Поиск города</mat-label>
+      </mat-form-field>
+    </form>
+    <!-- @for (item of cities; track $index) {
+      <button mat-flat-button style="margin-bottom: .25em;" color="primary" (click)="flyTo(item.coords)">{{item.name}}</button>
+    } -->
+  </div>
+  <div id="cesiumContainer" #cesium></div>
+</div>

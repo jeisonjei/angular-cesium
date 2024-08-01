@@ -26,7 +26,12 @@ export class AppComponent implements AfterViewInit, OnInit {
     { name: 'Москва', coords: Cartesian3.fromDegrees(37.6172, 55.7558, this.height) },
     { name: 'Новосибирск', coords: Cartesian3.fromDegrees(82.9500, 55.0500, this.height) },
     { name: 'Нижний Новгород', coords: Cartesian3.fromDegrees(44.0075, 56.3269, this.height) },
-    { name: 'Красноярск', coords: Cartesian3.fromDegrees(92.8719, 56.0089, this.height) }
+    { name: 'Красноярск', coords: Cartesian3.fromDegrees(92.8719, 56.0089, this.height) },
+    { name: 'Торонто', coords: Cartesian3.fromDegrees(-79.3832, 43.3855, this.height) },
+    { name: 'Лилль', coords: Cartesian3.fromDegrees(3.0679, 50.6244, this.height) },
+    { name: 'Висагинас', coords: Cartesian3.fromDegrees(26.4313, 55.5973, this.height) },
+    { name: 'Санкт-Петербург', coords: Cartesian3.fromDegrees(30.3086, 59.9375, this.height) },
+    { name: 'Норильск', coords: Cartesian3.fromDegrees(88.1893,69.3558,this.height )}
   ]
 
   filteredCities: Observable<any>;
